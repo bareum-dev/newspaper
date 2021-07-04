@@ -1,4 +1,19 @@
-/*Ссылка на шрифты кроме основного 'https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700'*/
+/*font-family: 'Farsan', cursive;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Six Caps', sans-serif;
+font-family: 'Space Mono', monospace;*/
+
+@font-face {
+  font-family: 'OtomanopeeOne-Regular';
+  src: url(/fonts/OtomanopeeOne-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+
+
+
 body
 {
     width: 1200px;
@@ -28,6 +43,8 @@ body
     padding: 25px 10px;
 
     border: 1px solid;
+
+    text-align: center;
 }
 
 .header__weather
@@ -40,18 +57,25 @@ body
 .header__weather-title
 {
     margin: 0;
+    font-size: 19px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 
 .header__weather-text
 {
     margin: 0;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 1.1;
 }
 
 .header__title
 {
     overflow: visible;
-
-    margin: 0;
+    text-align: center;
+    font-family: 'OtomanopeeOne-Regular';
+    font-size: 65px;
 }
 
 
@@ -69,6 +93,7 @@ body
     display: inline-block;
 
     margin: 0 30px;
+    font-size: 10px;
 }
 
 .sub-header__price
